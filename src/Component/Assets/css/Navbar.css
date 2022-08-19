@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*  */
+.topText div{
+    background-color: #e1e1e1; 
+    position: fixed;
+    color:grey;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    text-align: right;
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight:500;
+    z-index: 1;
+  }
+  .topText div a{
+    text-decoration: none;
+    color:grey;
+    z-index: inherit;
+  }
+  .topText div a:hover{
+    color:#075887;
+  }
+  /*  */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 2px black;
+    height: 90px;
+    z-index: 1;
+    background-color: white;
+
+    
+}
+.NavbarLogo {
+    justify-self: start;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.NavbarMenu{
+    display: flex;
+    margin-right: 50px;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 10;
+    background-color: transparent;
+    
+
+}
+.Navbar .NavbarMenu .MenuLink{
+    margin-left: 40px;
+    margin-right: 10px;
+    position: relative;
+    transition: all 2s ease;
+}
+.Navbar .NavbarMenu .MenuLink a {
+    text-decoration: none;
+    color: gray;
+    padding:  30px 0;
+}
+.Navbar .NavbarMenu .MenuLink a:hover{
+    color: #075887;
+}
+.Navbar .NavbarMenu button{
+    background-color: white;
+    padding: 6px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border-color:  gray;
+    color: gray;
+}
+.Navbar .NavbarMenu button:hover{
+    color: #075887;
+    border-color: #075887;
+}
+/*  submneu */
+.Navbar .NavbarMenu .SubMenu{
+    position: absolute;
+    top: 58px;
+    left: 0;
+    color: black;
+    width: 200px;
+    text-decoration:none;
+    list-style: none;
+    border-top: 4px solid #075887;
+    background-color: #fff;
+    box-shadow: 0 1px 2px   black;
+    transition: all 1s ease-in-out;
+    display: none;
+    z-index: 10;
+}
+.Navbar .NavbarMenu .SubMenu li{
+    padding: 4px 8px;
+    position: relative;
+}
+.Navbar .NavbarMenu .SubMenu li:hover{
+    background-color:#e1e1e1;
+}
+.Navbar .NavbarMenu .SubMenu a{
+    color: black;
+    font-weight: 100;
+    font-size: .7rem;
+}
+.Navbar .NavbarMenu .SubMenu a:hover{
+    color: black;
+}
+.Navbar .NavbarMenu .MenuLink:hover .SubMenu {
+    display: block;
+    transition: all 2 sec ease;
+    
+}
+/* sub submenu */
+.Navbar .NavbarMenu .SubMenu .SubSubMenu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    color: black;
+    width: 200px;
+    text-decoration:none;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 1px 2px   black;
+    transition: all 1s ease-in-out;
+    display: none;
+    z-index: 10;
+}
+
+.Navbar .NavbarMenu .SubMenu li:hover .SubSubMenu {
+    display: block;
+    transition: all 2 sec ease;
+    
+}
+/*  */
+.Navbar i{
+    display: none;
+}
+
+/* Medai quersies */
+ 
+/* @media screen and (max-width: 900px) and (min-width: 600px) */
+@media(max-width:1012px)and (min-width: 475px) {
+    .topText div{
+        text-align: center;
+      }
+    .Navbar{
+        position: fixed;
+        top: 30px;
+    }
+    .NavbarMenu{
+        display: block;
+        width: 400px;
+        margin-right: 0;
+        padding-top: 100px;
+        background-color: #fff;
+        position: absolute;
+        z-index:10;
+        box-shadow: 2px 3px 3px black;
+        top: -30px ;
+        height: 100vh;
+        transition: all 1s ease-in-out;
+    }
+    .Navbar .NavbarMenu .MenuLink{
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+    .Navbar .NavbarMenu button{
+        margin-top: 10px;
+    }
+    
+    .Navbar i{
+        display: none;
+    }
+    /* sub menu */
+    .Navbar .NavbarMenu .MenuLink:hover .SubMenu {
+        display: block;
+        position: relative;
+        border-top: 0 solid #000;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: none;
+
+    }
+    .Navbar .NavbarMenu .MenuLink .SubMenu li{
+        border-bottom: 1px solid #000;
+    }
+    /*  */
+    .Navbar .NavbarMenu .MenuLink .SubMenu li:hover .SubSubMenu {
+        display: block;
+        position: relative;
+        border-top: 0 solid #000;
+        top: 0;
+        left: 0;
+        box-shadow: none; padding: 0;
+        margin: 0;
+        transition: none;
+
+    }
+    .Navbar i{
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    
+}
+
+/*  */
+@media(max-width:475px){
+    .topText div{
+        text-align: center;
+      }
+    .Navbar{
+        
+        position: relative;
+        width: 100vw; 
+    }
+    .NavbarMenu{ 
+        display: block; 
+        width: 200px;
+        margin-right: 0;
+        padding-top: 100px;
+        background-color: #fff;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 2px 3px 3px black;
+        top: -30px ;
+        height: 100vh;
+        right:0;
+        transition: all 1s ease-in-out;
+    }
+    .Navbar .NavbarMenu .MenuLink{
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+    .Navbar .NavbarMenu button{
+        margin-top: 10px;
+    }
+    
+    .Navbar i{
+        display: none;
+    }
+    /* sub menu */
+    .Navbar .NavbarMenu .MenuLink:hover .SubMenu {
+        display: block;
+        position: relative;
+        border-top: 0 solid #000;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: none;
+
+    }
+    .Navbar .NavbarMenu .MenuLink .SubMenu li{
+        border-bottom: 1px solid #000;
+    }
+    /*  */
+    .Navbar .NavbarMenu .MenuLink .SubMenu li:hover .SubSubMenu {
+        display: block;
+        position: relative;
+        border-top: 0 solid #000;
+        top: 0;
+        left: 0;
+        box-shadow: none; padding: 0;
+        margin: 0;
+        transition: none;
+
+    }
+    .Navbar i{
+        display: block;
+        z-index: 1000;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    
+}

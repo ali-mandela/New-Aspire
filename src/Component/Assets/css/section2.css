@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header */
+
+.section2header{
+    padding: 50px 0;
+    background-color: #075887;
+    text-align: center;
+    margin: 0;
+}
+.section2header h1{
+    font-weight: 100;
+    color: white;
+    margin: 0;
+}
+
+
+/* bosy */
+.maindiv {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 20px;
+}
+.maindiv .divbody {
+    padding: 20px;
+    
+
+}
+.maindiv .divbody P{
+    font-size: .8 rem;
+    line-height: 25px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: gray;
+}
+.maindiv .divbody h1 {
+font-size: 1.2rem;
+font-weight: 100;
+margin-top: 20px;
+color: grey;
+}
+.maindiv .divbody button{
+    background-color: white;
+    border-color: #075887;
+    color: #075887;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.maindiv .divbody button:hover{
+    cursor: pointer;
+}
+@media(max-width:475px)
+{
+    .maindiv{
+        flex-direction: column;
+    }
+}
+
+/* main div 2 */
+.maindiv2{
+    background-image: url('../img/banner.png');
+    padding: 50px 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 1px  0   black;
+}
+.maindiv2 .maindiv2body{
+    padding: 0px 50px;
+    border: 2px solid grey;
+    width: 380px;
+    text-align: center;
+}
+.maindiv2 .maindiv2body:hover{
+    cursor: pointer;
+    border-color: black;
+}
+.maindiv2 .maindiv2body a{
+    text-decoration: none; 
+}
+.maindiv2 .maindiv2body h3{
+    color: black;
+    padding: 0;
+}
+.maindiv2 .maindiv2body p{
+    color: grey;
+    font-weight: 100;
+}
+
+@media(max-width:775px)
+{
+    .maindiv2{
+        flex-direction: column;
+        padding: 10px 0  ;
+    }
+    .maindiv2 .maindiv2body{
+        margin: 20px 0;
+        width: 320px;
+    }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.FooterDiv{
+    position: relative;
+    background-color: #4a4a4a;
+}
+ 
+.topDiv{
+    
+    color: white;
+    text-align: center;
+    padding: 40px 120px;
+}
+.topDiv h1{
+    font-weight: 100;
+    padding-bottom: 50px;
+}
+.topDiv a{
+    text-decoration: none;
+    color: white;
+}
+.topDiv a:hover{
+    color: gray;
+}
+.topDiv p{
+    font-size: 14px;
+}
+.btmdiv{
+    background-color: rgba(0, 0, 0, 0.814);
+    display: flex;
+    padding: 4px 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    
+}
+.btmdiv a{
+    text-decoration: none;
+    color: white;
+}
+.btmdiv a:hover{
+    color: gray;
+}
+.sidebtn{
+    position: absolute;
+    bottom: 30px;
+    right:30px;
+    display: none;
+   box-shadow: 0 1px 2px black;
+}
+.sidebtn i{
+        padding: 8px;
+ }
+.FooterDiv:hover .sidebtn{
+    display: block;
+    background-color: gray;
+}
+
+
+/* media queries max width 500 */
+@media (max-width:475px) {
+    .topDiv{
+        padding: 40px 3px;
+    }
+    .btmdiv{
+        display: block;
+    }
+    .sidebtn{
+        display: none;
+    }
+}
