@@ -234,7 +234,7 @@
       }
     .Navbar{
         
-        position: relative;
+        position: fixed;
         width: 100vw; 
     }
     .NavbarMenu{ 

@@ -1,0 +1,107 @@
+
+
+.topDiv{
+    height: 10px;
+    background-color: #075887;
+    box-shadow: 0 1px 2px skyblue;
+}
+
+.bodyDiv{
+    padding: 0 160px; 
+
+}
+.hr{
+    border-top: gainsboro solid 5px;
+}
+
+@media(max-width:500px)
+{
+    .mainDiv{
+        width:100% ;
+    }
+    .bodyDiv{
+        padding: 0 20px; 
+    
+    }
+    .bottomDiv{
+        padding: 0;
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+.bodyDiv h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+.bodyDiv P{
+    font-size: 20px;
+}
+.bodyDiv .p{
+    font-size: 17px;
+}
+
+
+.bodyDiv form input{
+    height: 40px;
+    border: 2px solid gray;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-right: 4px;
+
+}
+.bodyDiv form button{
+    height: 40px;
+    color: #075887;
+    background-color: white;
+    border: 2px solid #075887;
+    padding: 4px 8px;
+    width: 180px;
+    border-radius: 3px;
+
+}
+.bodyDiv form button:hover{
+    background-color:gainsboro;
+}
+table{
+    border-top: 6px solid #075887;
+    width: 100%;
+}
+
+table tr{
+    height: 60px; 
+}
+table tr td{
+    padding: 4px 14px;
+    font-size: 16px;
+
+}
+table tr th{
+    background-color: gainsboro;
+    padding: 4px 14px;
+    font-size: 16px;
+    color: maroon;
+}
+.bottomDiv{
+    padding: 30px 0;
+    display: flex;
+    
+}
+.bottomDiv img{
+    /* float: left; */
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+}
+.bottomDiv p{
+    background-color: #075887;
+    color: white;
+    padding: 15px 30px;
+    font-size: 14px;
+    height: 140px;
+}
+
+/* .footerDiv{
+    font-size: 12px;
+    color: gray;
+} */

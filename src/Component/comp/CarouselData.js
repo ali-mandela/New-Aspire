@@ -13,6 +13,10 @@ import logo3 from '../Assets/img/c.png'
 import logo4 from '../Assets/img/d.png'
 import logo5 from '../Assets/img/e.png'
 
+//Why aspire images 
+import image1 from '../Assets/img/whyaspire1.png'
+import image2 from '../Assets/img/whyaspire2.png'
+import image3 from '../Assets/img/whyaspire3.png'
 
 const CD = [
     {
@@ -106,3 +110,22 @@ export const CompanyLogoData=[
 
 
 ];
+
+
+export const WhyaspireImages=[
+    {
+        url:image1,
+        alt:"image one "
+
+},
+{
+    url:image2,
+    alt:"image two "
+
+},
+{
+    url:image3,
+    alt:"image three "
+
+}
+]

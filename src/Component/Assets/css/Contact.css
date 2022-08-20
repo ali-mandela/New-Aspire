@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.contactDiv{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    padding: 50px 10px;
+    background-color: #666;
+}
+.contactDiv .contactLeftDiv{
+    width: 400px;
+    padding: 0 20px;
+    margin: 0;
+    color: white;
+    font-weight: 100;
+    line-height: 40px;
+}
+ h1{
+    
+    font-weight: normal;
+}
+.contactDiv .contactLeftDiv p i{
+    color: #075587;
+    margin: 10px;
+}
+.contactDiv .contactLeftDiv p a{
+    color: white;
+    text-decoration: none;
+}
+.contactDiv .contactRightDiv {
+    padding: 0 20px;
+    margin: 0 ;
+}
+.contactDiv input{
+    margin: 10px 10px 10px 0;
+    height: 50px;
+    width: 280px;
+}
+.contactDiv textarea{
+    margin: 10px 10px 10px 0;
+    max-width:100% ;
+}
+.contactDiv .contactRightDiv  button{
+    padding: 20px;
+    color: white;
+    background-color: #075587;
+    font-size: 20px;
+    border: none;
+}
+.contactDiv .contactRightDiv  button:hover{
+    color: #666;
+}
+
+
+@media(max-width:475px) {
+    .contactDiv{
+        margin-top:30px;
+        flex-direction: column;
+    }
+    
+}

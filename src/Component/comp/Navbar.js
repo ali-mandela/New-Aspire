@@ -34,22 +34,22 @@ function handleclick(){
   <nav className='Navbar'>
   <Link to="/">
         <div className='NavbarLogo'><a href=""><img src={logo} alt="logo"/></a></div>
-        </Link>
+    </Link>
         <i onClick={handleclick} className={clicked?"fa-solid fa-3x fa-xmark":"fa-solid fa-3x fa-bars"}></i>
         
         <ul className='NavbarMenu' style={clicked?sttyle1:sttyle2}>
-                <li className= "MenuLink"><a href="">Why Aspire</a>
+                <li className= "MenuLink"><a>Why Aspire</a>
                 <ul className='SubMenu'>
-                    <li><a href=''>10 Reason to Aspire</a></li>
-                    <li><a href=''>Aspire Guarantee</a></li>
-                    <li><a href='#'>Mission</a></li>
+                    <li><Link to="TenReason"><a>10 Reason to Aspire</a></Link></li>
+                    <li><Link to="AspireGaurantee"><a>Aspire Guarantee</a></Link> </li>
+                    <li><Link to="Mission"><a>Mission</a></Link></li>
 
                 </ul>
                 </li>
-                <li className= "MenuLink "><a href="">IT services</a>
+                <li className= "MenuLink "><a>IT services</a>
                 <ul className='SubMenu'>
-                    <li><a href=''>Hourly IT services</a></li>
-                    <li><a href=''>Managed IT services</a>
+                    <li><Link to="BlockPage"><a>Hourly IT services</a></Link></li>
+                    <li><a>Managed IT services</a>
                         <ul className='SubSubMenu'>
                             <li> <a href=''>Managed services Packages</a></li>
                             <li> <a href=''>Software Management</a></li>
@@ -67,7 +67,7 @@ function handleclick(){
                     <li><a href='#'>Project services</a></li>
 
                 </ul></li>
-                <li className= "MenuLink "> <a href="">Contact</a></li>
+                <li className= "MenuLink "> <a><Link to="contact">Contact</Link></a></li>
                 <li><span><Link to="Clients" style={LinkStyle}>CLIENTS</Link></span></li>
                 <li><span><Link to="/RemoteSupport" style={LinkStyle}>REMOTE SUPPORT</Link></span></li>
                 
