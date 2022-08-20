@@ -1,4 +1,5 @@
 import './Assets/css/Footer.css'
+import {Link} from 'react-router-dom'
 
 function Footer(){
     return(<>
@@ -11,7 +12,7 @@ function Footer(){
             <a href=''>Areas Served</a>
             </p>
             </div>
-            <span className='sidebtn'><a href="#bottom"><i class="fa-solid fa-angle-up fa-3x"></i></a></span>
+            <Link to="/"> <span className='sidebtn'><i class="fa-solid fa-angle-up fa-3x"></i></span></Link>
 
             <div className="btmdiv">
             <p>© 2000-2022 Aspire Technology Solutions, Inc. All Rights Reserved.</p>

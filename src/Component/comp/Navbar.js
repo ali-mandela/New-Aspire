@@ -1,9 +1,15 @@
 // eslint-disable-next-line
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import '../Assets/css/Navbar.css'
 import logo from '../Assets/img/logo.png'
 
 function Navbar() {
+
+    const LinkStyle={
+        color:"gray",
+        textDecoration:"none",
+    };
 
 const [clicked,setClicked]=useState(false);
 const sttyle1={
@@ -26,7 +32,9 @@ function handleclick(){
          </div>
     </div>
   <nav className='Navbar'>
+  <Link to="/">
         <div className='NavbarLogo'><a href=""><img src={logo} alt="logo"/></a></div>
+        </Link>
         <i onClick={handleclick} className={clicked?"fa-solid fa-3x fa-xmark":"fa-solid fa-3x fa-bars"}></i>
         
         <ul className='NavbarMenu' style={clicked?sttyle1:sttyle2}>
@@ -60,8 +68,8 @@ function handleclick(){
 
                 </ul></li>
                 <li className= "MenuLink "> <a href="">Contact</a></li>
-                <li><button>CLIENTS</button></li>
-                <li><button>REMOTE SUPPORT</button></li>
+                <li><span><Link to="Clients" style={LinkStyle}>CLIENTS</Link></span></li>
+                <li><span><Link to="/RemoteSupport" style={LinkStyle}>REMOTE SUPPORT</Link></span></li>
                 
         </ul>
   </nav>

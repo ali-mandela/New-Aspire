@@ -77,15 +77,16 @@
 .Navbar .NavbarMenu .MenuLink a:hover{
     color: #075887;
 }
-.Navbar .NavbarMenu button{
+.Navbar .NavbarMenu span{
     background-color: white;
     padding: 6px;
     font-size: 1rem;
     margin-left: 10px;
     border-color:  gray;
     color: gray;
+    border: 2px solid gray;
 }
-.Navbar .NavbarMenu button:hover{
+.Navbar .NavbarMenu span:hover{
     color: #075887;
     border-color: #075887;
 }
