@@ -223,6 +223,10 @@
         right: 20px;
         top: 25px;
     }
+    .NavbarMenu li{
+        margin-top: 20px;
+
+    }
 
     
 }
@@ -296,6 +300,10 @@
         position: absolute;
         right: 20px;
         top: 25px;
+    }
+    .NavbarMenu li{
+        margin-top: 20px;
+
     }
 
     
