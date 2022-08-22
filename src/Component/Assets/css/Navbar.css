@@ -151,6 +151,22 @@
 .Navbar i{
     display: none;
 }
+/* side button */
+.sideRemotebtn{
+    position: fixed;
+    top: 45%;
+    right: 0;
+    z-index: 10000;
+    transform: rotate(90deg);
+    background-color: #075887;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 20%;
+}
+.sideRemotebtn a{
+    text-decoration: none;
+    color: white;
+}
 
 /* Medai quersies */
  

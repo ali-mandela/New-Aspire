@@ -8,6 +8,8 @@ import Mission from './Component/Mission';
 import RemoteSupport from './Component/RemoteSupport';
 import TenReason from './Component/TenReason';
 import AspireGaurantee from './Component/AspireGaurantee';
+import ProjectService from './Component/ProjectService'
+import BlockPage from './Component/BlockPage';
  
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="about" element={<CarouSel/>} />
-      {/* <Route path="BlockPage" element={</>}/> */}
+      <Route path="BlockPage" element={<BlockPage/>}/>
       <Route path='*' element={<Home/>}/>
       <Route path="Clients" element={<Client/>}/>
       <Route path="RemoteSupport" element={<RemoteSupport/>}/>
@@ -24,6 +26,7 @@ function App() {
       <Route path='TenReason' element={<TenReason/>} />
       <Route path='Mission' element={<Mission/>} />
       <Route path='AspireGaurantee' element={<AspireGaurantee/>} />
+      <Route path='ProjectService' element={<ProjectService/>}/>
     </Routes>
   </BrowserRouter>
   

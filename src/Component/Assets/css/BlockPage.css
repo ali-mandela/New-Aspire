@@ -1,12 +1,12 @@
 
 
-.topDiv{
-    height: 10px;
+.BlockpagetopDiv{
+    height: 20px;
     background-color: #075887;
     box-shadow: 0 1px 2px skyblue;
 }
 
-.bodyDiv{
+.BlockpagebodyDiv{
     padding: 0 160px; 
 
 }
@@ -16,33 +16,33 @@
 
 @media(max-width:500px)
 {
-    .mainDiv{
+    .BlockpageDiv{
         width:100% ;
     }
-    .bodyDiv{
+    .BlockpagebodyDiv{
         padding: 0 20px; 
     
     }
-    .bottomDiv{
+    .BlockpagebottomDiv{
         padding: 0;
         width: 90%;
         flex-direction: column;
     }
 }
 
-.bodyDiv h1{
+.BlockpagebodyDiv h1{
     font-size: 40px;
     font-weight: 100;
 }
-.bodyDiv P{
+.BlockpagebodyDiv P{
     font-size: 20px;
 }
-.bodyDiv .p{
+.BlockpagebodyDiv .p{
     font-size: 17px;
 }
 
 
-.bodyDiv form input{
+.BlockpagebodyDiv form input{
     height: 40px;
     border: 2px solid gray;
     padding: 4px 8px;
@@ -50,7 +50,7 @@
     margin-right: 4px;
 
 }
-.bodyDiv form button{
+.BlockpagebodyDiv form button{
     height: 40px;
     color: #075887;
     background-color: white;
@@ -60,7 +60,7 @@
     border-radius: 3px;
 
 }
-.bodyDiv form button:hover{
+.BlockpagebodyDiv form button:hover{
     background-color:gainsboro;
 }
 table{
@@ -82,18 +82,18 @@ table tr th{
     font-size: 16px;
     color: maroon;
 }
-.bottomDiv{
+.BlockpagebottomDiv{
     padding: 30px 0;
     display: flex;
     
 }
-.bottomDiv img{
+.BlockpagebottomDiv img{
     /* float: left; */
     width: 140px;
     height: 140px;
     margin-right: 20px;
 }
-.bottomDiv p{
+.BlockpagebottomDiv p{
     background-color: #075887;
     color: white;
     padding: 15px 30px;
@@ -101,7 +101,7 @@ table tr th{
     height: 140px;
 }
 
-/* .footerDiv{
+/* .BlockpagefooterDiv{
     font-size: 12px;
     color: gray;
 } */

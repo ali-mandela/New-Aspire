@@ -51,20 +51,20 @@ function handleclick(){
                     <li><Link to="BlockPage"><a>Hourly IT services</a></Link></li>
                     <li><a>Managed IT services</a>
                         <ul className='SubSubMenu'>
-                            <li> <a href=''>Managed services Packages</a></li>
-                            <li> <a href=''>Software Management</a></li>
-                            <li> <a href=''>Backup System Management</a></li>
-                            <li> <a href=''>Microsoft Exchange Server Setup</a></li>
-                            <li> <a href=''>Microsoft Office 365 Setup</a></li>
-                            <li> <a href=''>Mobile Device Management</a></li>
-                            <li> <a href=''>Network services</a></li>
-                            <li> <a href=''>Vendor Management</a></li>
-                            <li> <a href=''>Server Management</a></li>
-                            <li> <a href=''>Workstation Management</a></li>
+                            <li> <Link to="BlockPage"><a>Managed services Packages</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Software Management</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Backup System Management</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Microsoft Exchange Server Setup</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Microsoft Office 365 Setup</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Mobile Device Management</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Network services</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Vendor Management</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Server Management</a></Link></li>
+                            <li> <Link to="BlockPage"><a>Workstation Management</a></Link></li>
                         </ul>
                     </li>
-                    <li><a href='#'>Network Security Consulting</a></li>
-                    <li><a href='#'>Project services</a></li>
+                    <li><Link to="BlockPage"><a>Network Security Consulting</a></Link></li>
+                    <li><Link to="ProjectService"><a>Project services</a></Link></li>
 
                 </ul></li>
                 <li className= "MenuLink "> <a><Link to="contact">Contact</Link></a></li>
@@ -74,6 +74,10 @@ function handleclick(){
         </ul>
   </nav>
 
+    <button className='sideRemotebtn'>
+    <Link to="RemoteSupport"><a>Remote Support</a></Link>
+        
+    </button>
 
   </>)
   

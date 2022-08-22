@@ -1,4 +1,5 @@
 import '../Assets/css/section2.css'
+import {Link} from 'react-router-dom'
 import {section2Data,LinkSectionData} from '../comp/CarouselData.js'
 import React from 'react'
 
@@ -13,7 +14,7 @@ function Section2() {
     <img src={props.url} alt="img icon"/>
     <h1>{props.title}</h1>
     <p>{props.body}</p>
-    <p><button onClick={props.link}>Learn More</button> </p>
+    <p><Link to="BlockPage"><button onClick={props.link}>Learn More</button></Link> </p>
     </div>
     </>)
 
@@ -23,10 +24,11 @@ function Section2() {
     {LinkSectionData.map((props)=>{
         return(
             <div className='maindiv2body'>
-                <a href={props.link}>
+            <Link to="BlockPage"> <a href={props.link}>
                     <h3>{props.title}</h3>
                     <p>{props.body}</p>
                 </a>
+            </Link>
             </div>
     )})}
     </div></>)
