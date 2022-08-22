@@ -1,7 +1,7 @@
  import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import './App.css' 
 import Client from './Component/Client';
-import Carousel from './Component/comp/Carousel';
+import CarouSel from './Component/comp/Carousel';
 import Contact from './Component/Contact';
 import Home from './Component/Home';
 import Mission from './Component/Mission';
@@ -15,7 +15,7 @@ function App() {
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="about" element={<Carousel/>} />
+      <Route path="about" element={<CarouSel/>} />
       {/* <Route path="BlockPage" element={</>}/> */}
       <Route path='*' element={<Home/>}/>
       <Route path="Clients" element={<Client/>}/>

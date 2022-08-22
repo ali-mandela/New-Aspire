@@ -11,7 +11,7 @@ function Home(){
   return (<>
     <Navbar/>
     <div className='HomeDiv'>
-    <Carousel/>
+   <Carousel/> 
     <Section2/>
     <Testimonial/>
     <CompanyLogo/>

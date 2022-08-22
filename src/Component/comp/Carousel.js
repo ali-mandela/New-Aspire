@@ -36,7 +36,7 @@ function Dots({activeIndex,onClick,CD})
 function SliderContent({activeIndex,CD}) {
     return(<>
     {CD.map((cdd,index)=>(
-        <div key={index} className={index === activeIndex ? "slides active" : "inactive"}>
+        <div key={index} className={index === activeIndex ? "active slides  " : "inactive"}>
             <img className='slide-img' src={cdd.urls} alt="images"/>
             <h2 className='slide-title'>{cdd.title}</h2>
             <p className='slide-text'>{cdd.description}</p>
